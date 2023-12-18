@@ -1,0 +1,35 @@
+{
+  "name": "vscode-extension-template",
+  "version": "0.1.0",
+  "description": "a vscode extension template",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts",
+    "test": "vitest",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "loonguo",
+  "license": "MIT",
+  "packageManager": "pnpm@8.12.1",
+  "engines": {
+    "vscode": "^1.85.1"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vscode/vsce": "^2.22.0",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  }
+}
